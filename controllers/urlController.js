@@ -1,14 +1,15 @@
 const shortid = require('shortid');
 const qrCode = require('qrcode');
-const Url = require('../models/url'); 
+const Url = require('../models/Url'); 
 const validator = require('validator');
 
 const port = process.env.PORT || 3000; // Port number for the server
 
 
+
 exports.shortenUrl = async (req, res) => { 
   const { url: originalUrl, customCode } = req.body; // Retrieve the URL and custom code from the request body
-  let userId = req.cookies.userId; // Retrieve the user ID from the cookie
+  let userId = req.cookies ? req.cookies.userId : null; // Retrieve the user ID from the cookie
 
   if (!userId) {
     userId = shortid.generate();

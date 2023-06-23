@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+
+:root {
+    --header-color: #fd6b0a;
+    --body-color: #205375;
+    --text-color: #EFEFEF;
+    --other: #112B3C;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Philosopher', sans-serif;
+}
+
+body{
+    max-width: 100vw;
+    height: 100vh;
+    background-image: url(https://lh4.googleusercontent.com/-XplyTa1Za-I/VMSgIyAYkHI/AAAAAAAADxM/oL-rD6VP4ts/w1184-h666/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 30%;
+}
+
+div.main{
+    background-color: var(--body-color);
+    margin: 10px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+header {
+    height: 90px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top:0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Philosopher', sans-serif;
+    color: var(--header-color);
+    letter-spacing: 4px;
+}
+
+h2 {
+    margin: 10px 0;
+    text-align: center;
+    color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav button {
+    width: 100px;
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--header-color);
+    font-family: 'Philosopher', sans-serif;
+    background-color: var(--body-color);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+nav button:first-of-type:hover {
+    cursor: pointer;
+    background-color: var(--text-color);
+    border: 3px solid var(--header-color);
+}
+
+nav button:last-of-type:hover {
+    cursor: pointer;
+    background-color: var(--text-color);
+    border: 3px solid var(--header-color);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 36px;
+    letter-spacing: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+a:hover, button:hover {
+    color: var(--body-color);
+}
+
+section div input{
+    width:100%;
+    height: 45px;
+    margin-bottom: 3px;
+    border-color: transparent;
+    border-style: none;
+    border-bottom: 2px solid var(--header-color);
+    background-color: var(--body-color);
+    padding: 5px;
+}
+
+section div input:focus {
+    margin-bottom: 3px;
+    outline: transparent;
+}
+
+section div:first-of-type{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+    box-sizing: border-box;
+} 
+
+section div:first-of-type input{
+    width: 70%;
+}
+
+.form div:last-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button[type="submit"]{
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px;
+    border-style: none;
+    margin: 10px 0;
+}
+
+button:hover{
+    cursor: pointer;
+    border: 2px solid var(--header-color);
+    color: var(--other);
+}
+
+::placeholder{
+    color: black;
+    font-size: 14px;
+    font-weight: 520;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    position: absolute;
+    bottom: 23px;
+}

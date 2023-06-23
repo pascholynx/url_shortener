@@ -19,7 +19,7 @@ const limiter = rateLimit({
 });
 
 //  apply to all requests
-// app.use(limiter);
+app.use(limiter); 
 app.use(express.json()); // for parsing application/json
 app.use(cookieParser());
 app.use('/api', urlRoutes);

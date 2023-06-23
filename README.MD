@@ -4,11 +4,11 @@ This project is a simple URL shortener API, where you can create, read, and trac
 
 ## Table of Contents
 
-1.  [Features ] (#features )
-2.  [Installation ] (#installation )
-3.  [Usage ] (#usage )
-4.  [Testing ] (#testing )
-5.  [Contributing ] (#contributing )
+1.  [Features] (#features)
+2.  [Installation] (#installation)
+3.  [Usage] (#usage)
+4.  [Testing] (#testing)
+5.  [Contributing] (#contributing)
 
 ## Features
 
@@ -59,4 +59,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 
-[MIT ] (https://choosealicense.com/licenses/mit/ )
+[MIT] (https://choosealicense.com/licenses/mit/)

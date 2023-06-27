@@ -13,6 +13,9 @@ const port = process.env.PORT || 3000;
 // Connect to MongoDB
 connectDB();
 
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
+
 const limiter = rateLimit({
  windowMs: 15 * 60 * 1000, // 15 minutes
  max: 10, // limit each IP to 10 requests per windowMs

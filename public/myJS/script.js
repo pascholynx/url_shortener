@@ -15,7 +15,7 @@ form.addEventListener('submit', function(event) {
     };
 
     // Make the request to the server
-    fetch('/api', {
+    fetch('/api/shorten', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

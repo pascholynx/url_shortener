@@ -1,6 +1,6 @@
 const shortid = require('shortid');
 const qrCode = require('qrcode');
-const Url = require('../models/Url'); 
+const Url = require('../models/url'); 
 const validator = require('validator');
 
 const port = process.env.PORT || 3000; // Port number for the server
